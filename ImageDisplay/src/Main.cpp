@@ -118,7 +118,7 @@ void MyFrame::OnPaint(wxPaintEvent &event)
     dc.SetTextForeground(*wxWHITE);
     imgOffsetY = dc.GetCharHeight() * 3;
 
-    wxString text = "Original image (Left)  Image after modification (Right)\nUpdate program with your code to modify input image";
+    wxString text = "Random Intensity Image (Left)  Image with a line (Right)\nUpdate program with your code to modify input image";
     dc.DrawText(text, 0, 0);
     wxBitmap inImageBitmap = wxBitmap(inImage);
     dc.DrawBitmap(inImageBitmap, 0, imgOffsetY, false);
