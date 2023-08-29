@@ -96,13 +96,18 @@ Build and Run
 
 	- In the /build folder, you will find the executable (MyImageApplication).
 	- To run this, navigate to the build folder in a terminal and run the executable file.
-	- The given starter code uses relative file paths and will ONLY work if you run the
-	executable from the /build folder. It may not work if you navigate to the executable
-	file using Finder (Mac) or Windows Explorer. Later you may change this behavior.
-	- The starter code shows 2 image panes. For the left pane, we currently have a timer
-	that sets all the pixels to a random grayscale intensity. The right pane shows a
-	line drawn over an image. These are for demonstration purposes only. You need to
-	modify as per the requirements of the assignment.
+	- The given starter code takes exactly one argument - a file path to a 1920 x 1080 image
+	- This should be invoked as ./MyImageApplication '<path to rgb file>'
+	- Example - ./MyImageApplication '../../lake-forest.rgb'
+
+9. Rebuilds
+
+	After making changes to the source code, you need to build the executable again.
+	Command Palette > Type in "CMake: Build" and run it.
+
+	On restarting vscode, you may need to configure CMake by running "CMake: Configure"
+	After that, continue building using "CMake: Build".
+
 
 
 For Linux users, this starter code is only tested on Ubuntu 22.04 with default gcc compiler.
