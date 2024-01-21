@@ -10,8 +10,11 @@ public class ImageDisplay {
 	JFrame frame;
 	JLabel lbIm1;
 	BufferedImage imgOne;
-	int width = 1920; // default image width and height
-	int height = 1080;
+
+	// Modify the height and width values here to read and display an image with
+  	// different dimensions. 
+	int width = 512;
+	int height = 512;
 
 	/** Read Image RGB
 	 *  Reads the image of given width and height at the given imgPath into the provided BufferedImage.
@@ -59,10 +62,6 @@ public class ImageDisplay {
 	}
 
 	public void showIms(String[] args){
-
-		// Read a parameter from command line
-		String param1 = args[1];
-		System.out.println("The second parameter was: " + param1);
 
 		// Read in the specified image
 		imgOne = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);

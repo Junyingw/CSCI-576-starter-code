@@ -21,6 +21,6 @@ you are free to modify the program in any way to get the desirable output.
 - Usage example
 
 	```
-	$ Image.exe ../../Lena_512_512.rgb
+	$ Image.exe ../Lena_512_512.rgb
 	```
 
