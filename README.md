@@ -9,3 +9,9 @@ This repository contains the starter code for the assignments and projects for C
 2. ImageDisplay_C++_windows - This folder contains the starter code for a C++ project built using [Visual Studio IDE](https://visualstudio.microsoft.com/) and works ONLY on Windows. Note that this is different from Visual Studio Code (VS Code) mentioned above. Project specific instructions are available in the Readme file in the subfolder.
 
 3. ImageDisplay_Java - This project contains the starter code implemented in Java. This project is cross-platform and can be run on Windows, Linux or Mac. You can use any editor or command line tools to work on this project.
+
+## RGB File Format
+
+All three starter code projects, currently expect a 512x512 RGB data file as input. In each of the three projects the dimensions are specified at one location in code. Changing the dimension here lets you read and display images of different dimensions.
+
+The file should be a stream of bytes where each byte stores a value between 0 and 255. The RGB values are arranged RRRRRR.....GGGGGG.....BBBBB i.e the R values of all the pixels followed by the G values of all the pixels followed by the B values of all pixels. The values are NOT arranged as RGB.RGB.RGB and so on.

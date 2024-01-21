@@ -57,7 +57,7 @@ bool MyApp::OnInit() {
   cout << "Number of command line arguments: " << wxApp::argc << endl;
   if (wxApp::argc != 2) {
     cerr << "The executable should be invoked with exactly one filepath "
-            "arguments. Example ./MyImageApplication '../../lake-forest.rgb'"
+            "argument. Example ./MyImageApplication '../../Lena_512_512.rgb'"
          << endl;
     exit(1);
   }
