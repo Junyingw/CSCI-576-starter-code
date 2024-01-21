@@ -23,7 +23,7 @@ HINSTANCE		hInst;							// current instance
 TCHAR szTitle[MAX_LOADSTRING];					// The title bar text
 TCHAR szWindowClass[MAX_LOADSTRING];			// The title bar text
 
-// Foward declarations of functions included in this code module:
+// Forward declarations of functions included in this code module:
 ATOM				MyRegisterClass(HINSTANCE hInstance);
 BOOL				InitInstance(HINSTANCE, int);
 LRESULT CALLBACK	WndProc(HWND, UINT, WPARAM, LPARAM);
@@ -46,7 +46,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	// The rest of command line argument is truncated.
 	// If you want to use it, please modify the code.
 	if (lpCmdLine[0] == 0) {
-		wprintf(L"No command line arguement.");
+		wprintf(L"No command line argument.");
 		return -1;
 	}
 	int cnt=0;
@@ -57,8 +57,10 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	printf("The first parameter was: %s", lpCmdLine);
 
 	// Set up the images
-	int w = 1920;
-	int h = 1080;
+	// Modify the height and width values here to read and display an image with
+  	// different dimensions. 
+	int w = 512;
+	int h = 512;
 	inImage.setWidth(w);
 	inImage.setHeight(h);
 
@@ -242,7 +244,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 
 
-// Mesage handler for about box.
+// Message handler for about box.
 LRESULT CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 {
 	switch (message)
