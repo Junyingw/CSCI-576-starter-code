@@ -78,8 +78,11 @@ bool MyApp::OnInit() {
  */
 MyFrame::MyFrame(const wxString &title, string imagePath)
     : wxFrame(NULL, wxID_ANY, title) {
-  width = 1920;
-  height = 1080;
+
+  // Modify the height and width values here to read and display an image with
+  // different dimensions.    
+  width = 512;
+  height = 512;
 
   unsigned char *inData = readImageData(imagePath, width, height);
 

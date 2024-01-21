@@ -1,9 +1,11 @@
-This is a cross-platform vscode c++ imageDisplay starter project using wxWidgets.
-It contains four folders:
+This is a cross-platform C++ imageDisplay starter project using wxWidgets. You can use command line tools
+and any editor to work on this project, but the setup instructions that we provided specifically cater
+to Visual Studio Code (VS Code) - https://code.visualstudio.com/ which is a cross platform code editor.
+
+It contains three folders:
 	1. src: source code, this is where you should put your code
-	2. images: this is the resource folder for images
-	3. dependency: this is where the project dependencies reside
-	4. manifest: this is where the manifest file resides, it is specifically used for windows
+	2. dependency: this is where the project dependencies reside
+	3. manifest: this is where the manifest file resides, it is specifically used for windows
 
 Normally, you wouldn't need to touch the manifest and dependency folders unless you really know what you are doing!
 
@@ -14,6 +16,11 @@ Currently there is only one Main.cpp file in the src folder, you can add more fi
 but you need to modify the CMakeLists.txt file accordingly. The main file is well commented,
 read it and it should be easy to understand how to modify it for your own purposes.
 
+IMPORTANT
+
+To build and run the project, open the ImageDisplay_C++_cross_platform folder as the root folder
+in VS Code. You should not open the parent folder (CSCI-576-starter-code) in VS code if you are
+trying to build this C++ project.
 
 
 Build and Run
@@ -23,10 +30,11 @@ Build and Run
 	
 	Windows: You can install mingw-w64 from https://sourceforge.net/projects/mingw-w64/
 	Mac: You can install using Homebrew. You may already have clang installed (which is invoked
-		when gcc command is run). This should be fine.
+		when gcc command is run). This should be fine. You can verify this using `gcc --version`.
 	Linux: You can install gcc using apt-get (or apt)
 
 	Verify GCC installation by running `gcc --version`. GCC version 12.2 or higher is recommended.
+	On Mac, clang version 15.0.0 or higher is recommended
 	You may need to add gcc to the PATH environment variable.
 
 2. Install CMake
@@ -35,7 +43,7 @@ Build and Run
 	Mac: You can install using Homebrew
 	Linux: You can install using apt-get (or apt)
 
-	Verify CMake installation by running `cmake --version`. CMake version 3.26.3 or higher is recommended.
+	Verify CMake installation by running `cmake --version`. CMake version 3.28.1 or higher is recommended.
 	You may need to add cmake to the PATH environment variable.
 
 3. Open the project folder in vscode.
@@ -60,7 +68,8 @@ Build and Run
 	1. Find your compiler installation (gcc or clang) in the options that appear.
 	   You may use the [scan for kits] option to scan the device for compiler installations.
 
-	2. Choose the correct location for CMakeLists file - ${workspaceFolder}/ImageDisplay/CMakeLists.txt
+	2. If prompted, Choose the correct location for CMakeLists
+	   file - ${workspaceFolder}/ImageDisplay_C++_cross_platform/CMakeLists.txt
 
 	At this point, the Configure command should execute and you may see some output in vscode output window.
 
@@ -96,9 +105,9 @@ Build and Run
 
 	- In the /build folder, you will find the executable (MyImageApplication).
 	- To run this, navigate to the build folder in a terminal and run the executable file.
-	- The given starter code takes exactly one argument - a file path to a 1920 x 1080 image
+	- The given starter code takes exactly one argument - a file path to a 512x512 rgb image file
 	- This should be invoked as ./MyImageApplication '<path to rgb file>'
-	- Example - ./MyImageApplication '../../lake-forest.rgb'
+	- Example - ./MyImageApplication '../../Lena_512_512.rgb'
 
 9. Rebuilds
 
