@@ -15,3 +15,7 @@ This repository contains the starter code for the assignments and projects for C
 All three starter code projects, currently expect a 512x512 RGB data file as input. In each of the three projects the dimensions are specified at one location in code. Changing the dimension here lets you read and display images of different dimensions.
 
 The file should be a stream of bytes where each byte stores a value between 0 and 255. The RGB values are arranged RRRRRR.....GGGGGG.....BBBBB i.e the R values of all the pixels followed by the G values of all the pixels followed by the B values of all pixels. The values are NOT arranged as RGB.RGB.RGB and so on.
+
+## Acknowledgment
+
+Thanks to Rui Zhu and Yuyang Huang for their contributions to the original starter code.
